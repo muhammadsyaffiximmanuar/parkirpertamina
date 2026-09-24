@@ -1,0 +1,468 @@
+<!DOCTYPE html><html lang="id" class="light" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#e9bcb6",
+                    "secondary": "#3a5f94",
+                    "on-background": "#1a1c1c",
+                    "inverse-primary": "#ffb4aa",
+                    "secondary-container": "#9fc2fe",
+                    "secondary-fixed-dim": "#a7c8ff",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary-fixed": "#001b3c",
+                    "on-primary-fixed-variant": "#930007",
+                    "background": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "on-tertiary-fixed": "#112000",
+                    "surface-bright": "#f9f9f9",
+                    "surface-tint": "#c0000c",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#294f83",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#936e69",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#304f00",
+                    "on-secondary-fixed-variant": "#1f477b",
+                    "on-surface-variant": "#5e3f3b",
+                    "on-primary-container": "#fff5f3",
+                    "surface-container": "#eeeeee",
+                    "surface-dim": "#dadada",
+                    "primary-fixed": "#ffdad5",
+                    "surface": "#f9f9f9",
+                    "tertiary": "#3e6300",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#97d93a",
+                    "inverse-surface": "#2f3131",
+                    "surface-variant": "#e2e2e2",
+                    "tertiary-fixed": "#b2f655",
+                    "surface-container-low": "#f3f3f3",
+                    "primary-container": "#e30613",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#d5e3ff",
+                    "surface-container-high": "#e8e8e8",
+                    "inverse-on-surface": "#f1f1f1",
+                    "error": "#ba1a1a",
+                    "primary": "#b5000b",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#507e00",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#eaffc8",
+                    "on-primary-fixed": "#410001"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "16px",
+                    "container-max": "1440px",
+                    "xs": "4px",
+                    "lg": "24px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "xl": "32px",
+                    "sidebar-width": "260px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "title-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "title-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script><meta charset="utf-8"></head><body class="bg-background text-on-background">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-sidebar-width bg-secondary dark:bg-on-secondary-fixed flex flex-col py-lg z-50">
+<div class="px-md mb-xl flex items-center gap-sm">
+<div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+<img class="w-8 h-8 object-contain" alt="Logo Pertamina" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOG5IdYEQA-m7Pd_C7l_qHDHG5WAULIExzPanS0779guNt_2DaM74EUsFRfV2N4SO-fYdihO3SpXyoSOhWwYafXX0f4oiiODNsYyYu25eyO9IrvgvrSRuWz1C43EEluwSftubiARd1HBl5G2WJSKgIkUMVGEdgr8Ra6aN6GJds4ZDw0eVC7P2lPwX2yBkWPhX5O8w6MBb6f5Y6fP-PYcbMGsfi_ioRxStkEN86sQcHxURjpIRanMI-eRqeYExGtxh38t72JeG06qM">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-[20px] font-bold text-on-primary leading-tight">Pertamina Parking</span>
+<span class="text-label-md text-secondary-fixed-dim uppercase tracking-wider">HQ Management</span>
+</div>
+</div>
+<nav class="flex-1 space-y-xs overflow-y-auto scrollbar-hide"><!-- Active: Beranda -->
+<a class="flex items-center gap-sm bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container rounded-lg px-md py-sm mx-xs mb-xs sidebar-active" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-body-md text-body-md">Beranda</span>
+</a>
+<a class="flex items-center gap-sm text-secondary-fixed-dim hover:text-white px-md py-sm mx-xs mb-xs transition-colors sidebar-active" href="#">
+<span class="material-symbols-outlined">directions_car</span>
+<span class="font-body-md text-body-md">Kendaraan</span>
+</a>
+<a class="flex items-center gap-sm text-secondary-fixed-dim hover:text-white px-md py-sm mx-xs mb-xs transition-colors sidebar-active" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-body-md text-body-md">Transaksi</span>
+</a>
+<a class="flex items-center gap-sm text-secondary-fixed-dim hover:text-white px-md py-sm mx-xs mb-xs transition-colors sidebar-active" href="#">
+<span class="material-symbols-outlined">local_parking</span>
+<span class="font-body-md text-body-md">Lantai &amp; Area</span>
+</a>
+<a class="flex items-center gap-sm text-secondary-fixed-dim hover:text-white px-md py-sm mx-xs mb-xs transition-colors sidebar-active" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-body-md text-body-md">Tarif</span>
+</a>
+<a class="flex items-center gap-sm text-secondary-fixed-dim hover:text-white px-md py-sm mx-xs mb-xs transition-colors sidebar-active" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-body-md text-body-md">Pengguna</span>
+</a>
+<a class="flex items-center gap-sm text-secondary-fixed-dim hover:text-white px-md py-sm mx-xs mb-xs transition-colors sidebar-active" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="font-body-md text-body-md">Log Aktivitas</span>
+</a>
+<a class="flex items-center gap-sm text-secondary-fixed-dim hover:text-white px-md py-sm mx-xs mb-xs transition-colors sidebar-active" href="#">
+<span class="material-symbols-outlined">assessment</span>
+<span class="font-body-md text-body-md">Laporan</span>
+</a></nav>
+<div class="mt-auto border-t border-white/10 pt-md">
+<a class="flex items-center gap-sm text-secondary-fixed-dim hover:text-white px-md py-sm mx-xs sidebar-active" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-md text-body-md">Pengaturan</span>
+</a>
+</div>
+</aside>
+<!-- TopNavBar -->
+<header class="fixed top-0 right-0 h-16 w-[calc(100%-260px)] bg-surface dark:bg-surface-dim shadow-sm flex justify-between items-center px-lg z-40">
+<div class="flex items-center gap-lg">
+<h1 class="font-title-md text-title-md font-bold text-secondary dark:text-secondary-fixed-dim">Dashboard Management</h1>
+<div class="relative w-64 md:block hidden">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container border-none rounded-full pl-10 pr-4 py-2 text-body-md focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Cari data..." type="text">
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="text-right mr-md md:block hidden">
+<p class="font-body-md text-body-md font-semibold text-on-surface" id="current-time">13.03</p>
+<p class="text-label-md text-on-surface-variant" id="current-date">Jumat, 24 Juli 2026</p>
+</div>
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined">calendar_today</span>
+</button>
+<div class="w-px h-8 bg-outline-variant/30 mx-xs"></div>
+<div class="flex items-center gap-sm ml-xs">
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-primary/10" data-alt="A professional headshot of a corporate administrative officer, a woman with a confident smile, wearing a professional navy blue suit, set against a blurred modern office background with soft lighting, matching the corporate light mode theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCToKUidvC_zygUIRpBj40BOEpzilEk94JxeDC8BdsHmotOJ5K2dby_rPsdSqRwGA1vx66fL14AJOO0QpR1bIVIEbUqXoEz6K_VJBPd20uMH56VO2TM-oVYfAmgqFFdUZQrErdV7Ed72AnK9n0GUj1sCor7XK-QYf7o9p71HoLhbeSXMyzSaY5Q7GtMIv5n4RT0PMy2NscctePQqLaGi0bX0Fe4NTX6Pe7xdVtF50df8UmqVrylZz_xsEDwuVZVy4nxrdXf-V7yPN4">
+<div class="hidden lg:block">
+<p class="font-body-md text-body-md font-bold leading-none">Admin Pertamina</p>
+<p class="text-[10px] text-on-surface-variant uppercase mt-1">Super Admin</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="ml-sidebar-width pt-16 min-h-screen p-lg">
+<div class="max-w-container-max mx-auto space-y-lg">
+<!-- Summary Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-soft border border-outline-variant/10 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-base">
+<div class="p-2 bg-secondary/10 rounded-lg text-secondary">
+<span class="material-symbols-outlined">map</span>
+</div>
+<span class="text-tertiary font-bold text-label-md">+2</span>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant mb-xs">Total Area Parkir</p>
+<h3 class="font-title-md text-title-md font-bold">12 Area</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-soft border border-outline-variant/10 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-base">
+<div class="p-2 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">app_registration</span>
+</div>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant mb-xs">Kendaraan Terdaftar</p>
+<h3 class="font-title-md text-title-md font-bold">1,240</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-soft border border-outline-variant/10 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-base">
+<div class="p-2 bg-secondary/10 rounded-lg text-secondary">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<span class="text-error font-bold text-label-md">High</span>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant mb-xs">Terparkir Saat Ini</p>
+<h3 class="font-title-md text-title-md font-bold">856</h3>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-soft border border-outline-variant/10 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-base">
+<div class="p-2 bg-tertiary/10 rounded-lg text-tertiary">
+<span class="material-symbols-outlined">event_available</span>
+</div>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant mb-xs">Slot Parkir Tersedia</p>
+<h3 class="font-title-md text-title-md font-bold">144</h3>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-soft border border-outline-variant/10 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-base">
+<div class="p-2 bg-tertiary/10 rounded-lg text-tertiary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<span class="text-tertiary font-bold text-label-md">+12%</span>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant mb-xs">Pendapatan Hari Ini</p>
+<h3 class="font-title-md text-title-md font-bold">Rp 8.2jt</h3>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-soft border border-outline-variant/10 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-base">
+<div class="p-2 bg-secondary/10 rounded-lg text-secondary">
+<span class="material-symbols-outlined">group</span>
+</div>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant mb-xs">Pengguna Aktif</p>
+<h3 class="font-title-md text-title-md font-bold">42</h3>
+</div>
+</div>
+</div>
+<!-- Charts & Activity Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-lg">
+<!-- Revenue Chart (Line) -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-lg rounded-xl shadow-soft border border-outline-variant/10">
+<div class="flex justify-between items-center mb-lg">
+<div>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Tren Pendapatan Mingguan</h2>
+<p class="text-body-md text-on-surface-variant">Pertumbuhan harian selama 7 hari terakhir</p>
+</div>
+<div class="flex gap-xs">
+<button class="px-sm py-1 bg-surface-container-high rounded text-label-md font-bold">Mingguan</button>
+<button class="px-sm py-1 hover:bg-surface-container-high rounded text-label-md">Bulanan</button>
+</div>
+</div>
+<div class="h-64 flex items-end justify-between gap-md relative">
+<!-- Simplified Chart Visual Representation -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-10">
+<div class="border-b border-on-surface"></div>
+<div class="border-b border-on-surface"></div>
+<div class="border-b border-on-surface"></div>
+<div class="border-b border-on-surface"></div>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center gap-xs h-full">
+<div class="w-full bg-primary/20 rounded-t-lg transition-all duration-500" style="height: 40%"></div>
+<span class="text-[10px] text-on-surface-variant">Sen</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center gap-xs h-full">
+<div class="w-full bg-primary/20 rounded-t-lg transition-all duration-500" style="height: 60%"></div>
+<span class="text-[10px] text-on-surface-variant">Sel</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center gap-xs h-full">
+<div class="w-full bg-primary/20 rounded-t-lg transition-all duration-500" style="height: 55%"></div>
+<span class="text-[10px] text-on-surface-variant">Rab</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center gap-xs h-full">
+<div class="w-full bg-primary/20 rounded-t-lg transition-all duration-500" style="height: 85%"></div>
+<span class="text-[10px] text-on-surface-variant">Kam</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center gap-xs h-full">
+<div class="w-full bg-primary rounded-t-lg transition-all duration-500" style="height: 75%"></div>
+<span class="text-[10px] text-on-surface-variant">Jum</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center gap-xs h-full">
+<div class="w-full bg-primary/20 rounded-t-lg transition-all duration-500" style="height: 30%"></div>
+<span class="text-[10px] text-on-surface-variant">Sab</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center gap-xs h-full">
+<div class="w-full bg-primary/20 rounded-t-lg transition-all duration-500" style="height: 25%"></div>
+<span class="text-[10px] text-on-surface-variant">Min</span>
+</div>
+</div>
+</div>
+<!-- Occupancy Chart (Donut) -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-soft border border-outline-variant/10 flex flex-col">
+<h2 class="font-title-md text-title-md font-bold text-on-surface mb-lg">Okupansi Saat Ini</h2>
+<div class="flex-1 flex flex-col items-center justify-center">
+<div class="relative w-48 h-48 flex items-center justify-center">
+<!-- Circular SVG for Donut Chart -->
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-high" cx="96" cy="96" fill="transparent" r="80" stroke="currentColor" stroke-width="20"></circle>
+<circle class="text-primary transition-all duration-1000" cx="96" cy="96" fill="transparent" r="80" stroke="currentColor" stroke-dasharray="502.4" stroke-dashoffset="100.48" stroke-width="20"></circle>
+</svg>
+<div class="absolute text-center">
+<span class="font-display-lg text-display-lg text-on-surface leading-none block">80%</span>
+<span class="text-label-md text-on-surface-variant uppercase tracking-tighter">Kapasitas</span>
+</div>
+</div>
+<div class="mt-lg w-full space-y-base">
+<div class="flex justify-between items-center text-body-md">
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="">Terisi</span>
+</div>
+<span class="font-bold">856 Slot</span>
+</div>
+<div class="flex justify-between items-center text-body-md">
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-surface-container-high"></div>
+<span class="">Tersedia</span>
+</div>
+<span class="font-bold">144 Slot</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Activity & Detailed Stats -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-lg">
+<!-- Activity List -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-soft border border-outline-variant/10">
+<div class="flex justify-between items-center mb-lg">
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Aktivitas Terbaru</h2>
+<button class="text-primary text-body-md font-semibold hover:underline">Lihat Semua</button>
+</div>
+<div class="space-y-md">
+<!-- Activity Item 1 -->
+<div class="flex items-center gap-md p-md hover:bg-surface-container-low transition-colors rounded-lg group">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">login</span>
+</div>
+<div class="flex-1">
+<p class="text-body-md font-bold text-on-surface">B 1234 ABC <span class="font-normal text-on-surface-variant">masuk ke Area A1</span></p>
+<p class="text-label-md text-on-surface-variant">2 Menit yang lalu • Toyota Avanza</p>
+</div>
+<span class="text-[12px] px-2 py-1 bg-tertiary/10 text-tertiary rounded font-bold">Masuk</span>
+</div>
+<!-- Activity Item 2 -->
+<div class="flex items-center gap-md p-md hover:bg-surface-container-low transition-colors rounded-lg group">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">logout</span>
+</div>
+<div class="flex-1">
+<p class="text-body-md font-bold text-on-surface">B 5678 XYZ <span class="font-normal text-on-surface-variant">keluar dari Area B2</span></p>
+<p class="text-label-md text-on-surface-variant">8 Menit yang lalu • Honda HR-V</p>
+</div>
+<span class="text-[12px] px-2 py-1 bg-primary/10 text-primary rounded font-bold">Keluar</span>
+</div>
+<!-- Activity Item 3 -->
+<div class="flex items-center gap-md p-md hover:bg-surface-container-low transition-colors rounded-lg group">
+<div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div class="flex-1">
+<p class="text-body-md font-bold text-on-surface">Pembayaran Berhasil <span class="font-normal text-on-surface-variant">untuk B 9910 KKK</span></p>
+<p class="text-label-md text-on-surface-variant">15 Menit yang lalu • Rp 15,000</p>
+</div>
+<span class="text-[12px] px-2 py-1 bg-secondary/10 text-secondary rounded font-bold">Selesai</span>
+</div>
+<!-- Activity Item 4 -->
+<div class="flex items-center gap-md p-md hover:bg-surface-container-low transition-colors rounded-lg group">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">login</span>
+</div>
+<div class="flex-1">
+<p class="text-body-md font-bold text-on-surface">D 4455 POL <span class="font-normal text-on-surface-variant">masuk ke Area VIP</span></p>
+<p class="text-label-md text-on-surface-variant">22 Menit yang lalu • Mitsubishi Pajero</p>
+</div>
+<span class="text-[12px] px-2 py-1 bg-tertiary/10 text-tertiary rounded font-bold">Masuk</span>
+</div>
+</div>
+</div>
+<!-- Live Map / Quick View Area -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-soft border border-outline-variant/10 relative overflow-hidden group">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed 3D architectural floor plan of a corporate parking facility, showcasing clean white floors, red and blue parking slot markings, and minimalist digital representations of cars. The style is isometric, professional, and well-lit with soft corporate shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO5RxtABQRwScKaD6ip7p6Z9vm1ziTZx-0u1VA3rn3JfW-AryBMI_4lLth6UwFS8jLhV1m3Wf7SfazVi7FCqX-7n2hWujaMlatnMBgCTcPCC9_X80fjmjyllp5fPCGnS3NNmlveVOBJOdkevX59E6YoLMvx1MggD8cV3Hr19j_nptxr1fiHozPJQnnNaO_RmWGmq7pFr4H1toMjNLyBujomNO8irSV7l73Gj0aohTzpS5sCww1LouWpcPKyFkxKT_AZdUn32CycDo">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+</div>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div class="flex justify-between items-start">
+<div class="bg-white/90 backdrop-blur-md p-md rounded-lg">
+<h3 class="font-bold text-on-surface text-body-lg">Pantauan Area Utama</h3>
+<p class="text-label-md text-on-surface-variant flex items-center gap-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+                                    Live Update: LT 1 - Section A
+                                </p>
+</div>
+<button class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg active:scale-95 transition-transform">
+<span class="material-symbols-outlined">fullscreen</span>
+</button>
+</div>
+<div class="flex gap-md mt-xl overflow-x-auto scrollbar-hide pb-2">
+<div class="bg-white/90 backdrop-blur-md px-md py-sm rounded-lg min-w-[120px]">
+<p class="text-[10px] text-on-surface-variant uppercase font-bold">Lantai 1</p>
+<p class="text-title-md font-bold text-primary">92% Full</p>
+</div>
+<div class="bg-white/90 backdrop-blur-md px-md py-sm rounded-lg min-w-[120px]">
+<p class="text-[10px] text-on-surface-variant uppercase font-bold">Lantai 2</p>
+<p class="text-title-md font-bold text-secondary">45% Full</p>
+</div>
+<div class="bg-white/90 backdrop-blur-md px-md py-sm rounded-lg min-w-[120px]">
+<p class="text-[10px] text-on-surface-variant uppercase font-bold">Area Terbuka</p>
+<p class="text-title-md font-bold text-tertiary">12% Full</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="mt-xl pt-lg border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-md text-on-surface-variant">
+  <div class="flex flex-col md:flex-row items-center gap-md">
+    <span class="text-label-md">© 2024 PT Pertamina (Persero). Seluruh Hak Cipta Dilindungi.</span>
+    <span class="hidden md:block w-px h-3 bg-outline-variant/30"></span>
+    <span class="text-label-md font-bold">v1.0.0</span>
+  </div>
+  <div class="flex items-center gap-lg">
+    <a href="#" class="text-label-md hover:text-primary transition-colors">Kebijakan Privasi</a>
+    <a href="#" class="text-label-md hover:text-primary transition-colors">Syarat &amp; Ketentuan</a>
+    <a href="#" class="text-label-md hover:text-primary transition-colors">Bantuan</a>
+  </div>
+</footer></main>
+<script>
+        function updateDateTime() {
+            const now = new Date();
+            const optionsDate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const optionsTime = { hour: '2-digit', minute: '2-digit' };
+            
+            document.getElementById('current-date').textContent = now.toLocaleDateString('id-ID', optionsDate);
+            document.getElementById('current-time').textContent = now.toLocaleTimeString('id-ID', optionsTime);
+        }
+
+        setInterval(updateDateTime, 60000);
+        updateDateTime();
+
+        // Micro-interactions for buttons
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.classList.add('opacity-80');
+                setTimeout(() => this.classList.remove('opacity-80'), 100);
+            });
+        });
+    </script>
+
+
+</body></html>
